@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+#searchInput{
+  color: #777;
+}
+button:focus{
+  outline: none;
+}
+body {
+  color: #777;
+  background: #222;
+  box-sizing: border-box;
+}
+.searchform {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+}
+button, input {
+  vertical-align: baseline;
+}
+button {
+  background-color: transparent;
+  border: none;
+  margin: 0.125em 0.125em 1em 1em;
+  max-width: 18%;
+}
+input[type="search"] {
+  border: 2px solid #777;
+  border-width: 0 0 3px;
+  background-color: transparent;
+  font: 22px "Open Sans", sans-serif;
+  padding: 0.125em 0.225em;
+  max-width: 80%;
+  float: left;
+
+}
+input[type="search"]:focus {
+  color: #E18728;
+  border-color: #E18728;
+  outline: none;
+}
+.main {
+  margin-top: 60px;
+}
+hr{
+  border-top: 1px solid #777;
+}
+#map {
+  height: 400px;
+  width: 100%;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px #222 inset; /* Change the color to your own background color */
+    -webkit-text-fill-color: #777;
+}
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: /*your box-shadow*/,0 0 0 50px #222 inset;
+    -webkit-text-fill-color: #777;
+}
+.mapShow{
+  background-color: #E18728;
+  border: 2px solid #E18728;
+  border-radius: 10px;
+  color:#222;
+  float: right;
+}

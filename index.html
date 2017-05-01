@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Brewery Finder</title>
+		<meta name="description" content="Find brewery near me">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/site.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	</head>
+	<body>
+	<div class="container main">
+		<div class="row">
+		<div class="col-md-4">
+			<form onsubmit="search();" class="searchform group">
+				<button for="search-box">
+					<span class="fa fa-2x fa-search"></span>
+				</button>
+				<input type="search" id="searchInput" placeholder="Search">
+			</form>
+			<div id="results"></div>
+		
+		</div>
+		<div class="col-md-8">
+				<div id="map"></div>
+		</div>
+		</div>
+	</div>
+
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCocQb4O7uFW3AVorZJ1HIGZrW9BsGwTe8&callback=initMap"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	</body>
+</html>
